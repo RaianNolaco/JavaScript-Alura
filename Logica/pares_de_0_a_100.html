@@ -1,0 +1,28 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var i = 0;
+
+	while(i <= 100){
+
+		if(i%2 == 0){
+
+			mostra("O numero "+i+" é par");
+		}
+		i +=1;
+		mostra("Fim");
+	}
+
+</script>

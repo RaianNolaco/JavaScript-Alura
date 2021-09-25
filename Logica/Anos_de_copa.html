@@ -1,0 +1,27 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+	var anoAtual = new Date().getFullYear();
+	var anoCopa = 1930;
+
+	while(anoCopa <= anoAtual){
+
+		mostra("Em " + anoCopa + " teve copa.<br>");
+		anoCopa += 4;
+
+	}
+
+</script>

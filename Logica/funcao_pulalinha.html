@@ -1,0 +1,38 @@
+<meta charset = "UTF-8">
+
+<script>
+
+	function pulaLinha(){
+
+	  for(var i = 1; i <= 2; i++){
+
+	  		document.write("<br>");
+
+	 	}
+
+	}
+
+	function mostra(frase){
+
+		document.write(frase); 
+		pulaLinha();
+		
+	}
+
+	var ano = 2021;
+
+	mostra("priquito");
+	mostra("Rodolfo tem " + (ano - 1997) + " anos de idade ");
+	mostra("Raian tem " + (ano - 1996) + " anos de idade ");
+	mostra("Rodrigo tem " + (ano - 1976) + " anos de idade <br>");
+	
+
+	var rodolfo = 24;
+	var raian = 25;
+	var rodrigo = 45;
+
+	var media = ( rodolfo + raian + rodrigo )/3;
+
+	document.write("A media das idades é: " + Math.round(media) + "  (Numero arredondado)");
+
+</script>

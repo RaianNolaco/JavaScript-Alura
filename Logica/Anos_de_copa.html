@@ -4,7 +4,7 @@
 	
 	function pulaLinha() {
 		
-		document.write("<br><br>");
+		document.write("<br>");
 	}
 
 	function mostra(frase) {
@@ -14,14 +14,20 @@
 	}
 
 
-	var anoAtual = new Date().getFullYear();
+	//new Date().getFullYear()
+	var anoEscolhido = prompt("Digite ate que ano que você deseja que seja contabilidae");
 	var anoCopa = 1930;
 
-	while(anoCopa <= anoAtual){
+	var qntCopas = 0;
+
+	while(anoCopa <= anoEscolhido){
 
 		mostra("Em " + anoCopa + " teve copa.<br>");
 		anoCopa += 4;
 
+		qntCopas++
 	}
+
+	alert("Até o ano escolhido tiveram " + qntCopas + " copas.");
 
 </script>

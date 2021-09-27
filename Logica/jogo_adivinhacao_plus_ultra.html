@@ -1,0 +1,31 @@
+<meta charset = "UTF-8">
+
+<input/>
+<button>Compare</button onclick = "verifica();">
+
+<script>
+	var segredo = 5;
+
+	var input = document.querySelector("input");
+		
+	function verifica(){
+
+
+		if(input.value == segredo){
+
+			alert("ACERTO MISERAVI!");
+
+		}else{
+
+			alert("Você Errou :(");
+		}
+
+	}
+
+	var btn =  document.querySelector("Button");
+	btn.onclick = verifica;
+
+
+
+
+</script>

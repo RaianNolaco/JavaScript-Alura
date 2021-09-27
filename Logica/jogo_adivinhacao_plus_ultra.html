@@ -1,12 +1,13 @@
 <meta charset = "UTF-8">
 
 <input/>
-<button>Compare</button onclick = "verifica();">
+<button>Compare</button>
 
 <script>
-	var segredo = 5;
+	var segredo = Math.round(Math.random()*10) ;
 
-	var input = document.querySelector("input");
+	var input = document.querySelector("input");		
+	input.focus();
 		
 	function verifica(){
 
@@ -20,6 +21,8 @@
 			alert("Você Errou :(");
 		}
 
+		input.value = "";
+		input.focus();
 	}
 
 	var btn =  document.querySelector("Button");

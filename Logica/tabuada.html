@@ -1,0 +1,23 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var valorTabuada = parseInt(prompt("Qual numero deseja saber a tabuada?"));
+
+	for(var i = 0; i <= 10; i++){
+
+		 mostra(valorTabuada +" X " + i + " = "+ (valorTabuada * i));
+	}
+
+</script>

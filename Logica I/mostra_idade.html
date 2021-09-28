@@ -1,0 +1,37 @@
+<meta charset = "UTF-8">
+
+<h2>Mostra nascimento</h2>
+
+<script>
+	
+	function pulaLinha(){
+
+		document.write("<hr><br>");
+
+	}
+
+
+	function mostra(frase){
+
+
+		document.write("<big>"+frase+"</big>");
+		pulaLinha();
+
+	}
+
+	function anoNasc(idade){
+
+		var ano = new Date().getFullYear();
+		idade =  ano - idade;
+		return idade;
+
+	}
+
+
+	mostra("Eu nasci em " + anoNasc(19));
+	mostra("Minha irmã nasceu em "+ anoNasc(14));
+
+
+
+
+</script>

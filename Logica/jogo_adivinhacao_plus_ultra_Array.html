@@ -14,7 +14,8 @@
 	function listSegredos(qntSegredos){
 
 		var array = [];
-		for(var i = 0;i < qntSegredos;i++){
+		var i = 0;
+		while(i < qntSegredos){
 
 
 			var numAleatorio = sorteia();
@@ -32,7 +33,7 @@
 				if(achou == false){
 			
 					array.push(numAleatorio);
-			
+					i++;
 				}
 			}
 		}

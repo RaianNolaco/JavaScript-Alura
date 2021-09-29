@@ -1,0 +1,37 @@
+<meta charset = "UTF-8">
+
+<canvas  width="600" height="400"></canvas>
+
+<script>
+
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'darkgreen';
+	pincel.fillRect(0,0,350,300);
+
+	//olho 1
+	pincel.fillStyle = 'black';
+	pincel.fillRect(50,60,90,90);
+
+	//olho 2
+	pincel.fillStyle = 'black';
+	pincel.fillRect(210,60,90,90);
+
+	//nariz
+	pincel.fillStyle = 'black';
+	pincel.fillRect(140,150,70,100);
+
+	//boca1
+	pincel.fillStyle = 'black';
+	pincel.fillRect(100,190,40,110);
+
+	//boca2
+	pincel.fillStyle = 'black';
+	pincel.fillRect(210,190,40,110);
+
+
+</script>
+
+
+

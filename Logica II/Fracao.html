@@ -1,0 +1,44 @@
+<canvas width="1200" height="1200"></canvas>
+
+<script>
+
+	function desenhaTexto(texto,x,y){
+
+		var tela = document.querySelector('canvas');
+		var pincel = tela.getContext('2d');
+
+		pincel.font = '20px Georgia';
+		pincel.fillStyle = 'black';
+		pincel.fillText(texto,x,y);
+
+	}
+
+	function desenhaQuadrado(x,y,cor,quntidade,tamanho){
+
+		var tela = document.querySelector('canvas');
+		var pincel = tela.getContext('2d');
+
+		var val = 0;
+
+		for(var i = 1;i <=quntidade;i++){
+
+			pincel.fillStyle = cor;
+			pincel.fillRect((x+val),y,tamanho,tamanho);
+			pincel.fillStroke = 'black';
+			pincel.strokeRect((x+val),y,tamanho,tamanho);
+			val +=tamanho;
+			pincel.strokeRect((x+val),y,tamanho,tamanho);
+			
+
+		}
+
+		
+	}
+
+	desenhaTexto("Fração",50,50);
+	desenhaQuadrado(150,150,'green',4,50);
+
+
+
+	
+</script>

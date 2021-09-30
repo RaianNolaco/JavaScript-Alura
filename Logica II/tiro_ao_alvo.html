@@ -18,10 +18,14 @@
 
     }
 
-    desenhaCirculo(300,200,raio + 20,'red');
-    desenhaCirculo(300,200,raio + 10,'white');
-    desenhaCirculo(300,200,raio ,'red');
+    function desenhaAlvo(x,y){
 
+        desenhaCirculo(x,y,raio + 20,'red');
+        desenhaCirculo(x,y,raio + 10,'white');
+        desenhaCirculo(x,y,raio ,'red');
+    }
+
+    
     function dispara(evento){
 
         var x = evento.pageX - tela.offsetLeft;
@@ -32,9 +36,6 @@
             console.log('acertou');
 
         }
-
-     
-
     }
 
     tela.onclick = dispara;

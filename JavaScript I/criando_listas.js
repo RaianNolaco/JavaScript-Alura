@@ -1,4 +1,4 @@
-console.log(`criando listas`);
+onsole.log(`criando listas`);
 
 const listaDeDestinos = new Array(
     `Salvador`,
